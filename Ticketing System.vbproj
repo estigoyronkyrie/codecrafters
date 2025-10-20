@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A984886-DBB6-4CD6-AB7E-C36DD451CA58}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Ticketing_System.My.MyApplication</StartupObject>
+    <RootNamespace>Ticketing_System</RootNamespace>
+    <AssemblyName>Ticketing System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\lovel\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>28</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>C:\Users\lovel\Downloads</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ticketing System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ticketing System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>62C858CC9AD93B112CD2887B495647E17DBE8F6F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Ticketing System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>..\..\..\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode">
+      <HintPath>..\..\..\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A. Admin Dashboards\AdminDashboard.Designer.vb">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Admin Dashboards\AdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Admin\AdminForm.Designer.vb">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Admin\AdminForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Admin\AdminAccounts.Designer.vb">
+      <DependentUpon>AdminAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Admin\AdminAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Admin\UserAccounts.Designer.vb">
+      <DependentUpon>UserAccounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Admin\UserAccounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Booking\BookingRecords.Designer.vb">
+      <DependentUpon>BookingRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Booking\BookingRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Buses\FormBuses.Designer.vb">
+      <DependentUpon>FormBuses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Buses\FormBuses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Employee\FormEmployee.Designer.vb">
+      <DependentUpon>FormEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Employee\FormEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Routes\FormRoutes.Designer.vb">
+      <DependentUpon>FormRoutes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Routes\FormRoutes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Terminal\FormTerminal.Designer.vb">
+      <DependentUpon>FormTerminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Terminal\FormTerminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Employee\EmployeeDetails.Designer.vb">
+      <DependentUpon>EmployeeDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Employee\EmployeeDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Employee\EmployeeRecords.Designer.vb">
+      <DependentUpon>EmployeeRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Employee\EmployeeRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Buses\BusesRecords.Designer.vb">
+      <DependentUpon>BusesRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Buses\BusesRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Booking\FormBooking.designer.vb">
+      <DependentUpon>FormBooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Booking\FormBooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\Connection.vb" />
+    <Compile Include="LogIn Form\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn Form\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Functions\LoginHistoryModule.vb" />
+    <Compile Include="A. Form Admin\LoginsHistory.Designer.vb">
+      <DependentUpon>LoginsHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Admin\LoginsHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Buses\MaintenanceRecords.Designer.vb">
+      <DependentUpon>MaintenanceRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Buses\MaintenanceRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Functions\Utilities.vb" />
+    <Compile Include="A. Form Routes\RouteDetails.Designer.vb">
+      <DependentUpon>RouteDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Routes\RouteDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Routes\RouteRecords.Designer.vb">
+      <DependentUpon>RouteRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Routes\RouteRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Terminal\TerminalDetails.Designer.vb">
+      <DependentUpon>TerminalDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Terminal\TerminalDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A. Form Terminal\TerminalRecords.Designer.vb">
+      <DependentUpon>TerminalRecords.vb</DependentUpon>
+    </Compile>
+    <Compile Include="A. Form Terminal\TerminalRecords.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Dashboards\UserScheduleAndSeat.designer.vb">
+      <DependentUpon>UserScheduleAndSeat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Dashboards\UserScheduleAndSeat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Dashboards\Confirmation.Designer.vb">
+      <DependentUpon>Confirmation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Dashboards\Confirmation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Dashboards\Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Dashboards\Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Dashboards\UserBookingDetails.Designer.vb">
+      <DependentUpon>UserBookingDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User Dashboards\UserBookingDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="A. Admin Dashboards\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Admin\AdminForm.resx">
+      <DependentUpon>AdminForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Admin\AdminAccounts.resx">
+      <DependentUpon>AdminAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Admin\UserAccounts.resx">
+      <DependentUpon>UserAccounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Booking\BookingRecords.resx">
+      <DependentUpon>BookingRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Buses\FormBuses.resx">
+      <DependentUpon>FormBuses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Employee\EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Employee\FormEmployee.resx">
+      <DependentUpon>FormEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Routes\FormRoutes.resx">
+      <DependentUpon>FormRoutes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Routes\RouteDetails.resx">
+      <DependentUpon>RouteDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Routes\RouteRecords.resx">
+      <DependentUpon>RouteRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Terminal\FormTerminal.resx">
+      <DependentUpon>FormTerminal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Employee\EmployeeRecords.resx">
+      <DependentUpon>EmployeeRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Buses\BusesRecords.resx">
+      <DependentUpon>BusesRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Booking\FormBooking.resx">
+      <DependentUpon>FormBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Terminal\TerminalDetails.resx">
+      <DependentUpon>TerminalDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Terminal\TerminalRecords.resx">
+      <DependentUpon>TerminalRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn Form\LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Admin\LoginsHistory.resx">
+      <DependentUpon>LoginsHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A. Form Buses\MaintenanceRecords.resx">
+      <DependentUpon>MaintenanceRecords.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Dashboards\Confirmation.resx">
+      <DependentUpon>Confirmation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Dashboards\Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Dashboards\UserScheduleAndSeat.resx">
+      <DependentUpon>UserScheduleAndSeat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Dashboards\UserBookingDetails.resx">
+      <DependentUpon>UserBookingDetails.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
